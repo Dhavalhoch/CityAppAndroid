@@ -3,6 +3,7 @@
     <string name="activity_title_work_experience">Your Recent Work Experience</string>
     <string name="activity_title_your_education">Your Education</string>
     <string name="activity_title_job_preferences">Job Preferences</string>
+<!--    <string name="git_token">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</string>-->
 
     <string name="choose_your_role">Choose Your Role</string>
     <string name="i_am_job_seeker">I am a Job Seeker</string>
