@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".ui.activity.MainActivity">
+
+        <include
+            android:id="@+id/tbView"
+            layout="@layout/toolbar_layout" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbView"
+            android:layout_marginTop="-2dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_padding">
+
+
+            <TextView
+                android:id="@+id/tvWorkExp"
+                style="@style/TextStyleNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:paddingHorizontal="@dimen/activity_padding"
+                android:paddingVertical="@dimen/edittext_padding_vertical"
+                android:text="@string/work_experience"
+                android:textColor="@color/colorBlack1"
+                app:drawableEndCompat="@drawable/ic_add" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_width"
+                android:layout_marginHorizontal="@dimen/activity_padding"
+                android:background="@color/colorWhite1" />
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/activity_padding"
+                android:layout_marginTop="@dimen/margin_very_small"
+                android:text="@string/i_am_fresher" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="@dimen/activity_padding"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/background_yellow_light">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_warning"
+                    android:drawablePadding="@dimen/text_drawable_margin_medium"
+                    android:text="@string/by_choosing_fresher"
+                    android:textColor="@color/colorYellow" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                tools:itemCount="3"
+                tools:listitem="@layout/row_experience" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/ButtonFillStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:paddingVertical="0dp"
+                android:text="@string/button_next" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</layout>

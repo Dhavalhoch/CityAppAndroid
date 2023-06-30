@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".ui.activity.MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_padding">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mobile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SmallTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:text="@string/otp_verification" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SmallTitleTextStyleGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_very_small"
+                    android:text="Enter OTP sent on +919876543210" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etOne"
+                        style="@style/OtpTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_small" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etTwo"
+                        style="@style/OtpTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/margin_small" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etThree"
+                        style="@style/OtpTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/margin_small" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etFour"
+                        style="@style/OtpTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/SmallTitleTextStyleGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/resend_otp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/SmallTitleTextStyleGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_very_small"
+                        android:text="1:00"
+                        android:textColor="@color/colorPrimary" />
+
+                    <View
+                        android:layout_width="@dimen/stroke_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/text_drawable_margin_small"
+                        android:layout_marginEnd="@dimen/text_drawable_margin_small"
+                        android:background="@color/colorWhite1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/SmallTitleTextStyleGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_mobile_number" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    style="@style/ButtonFillStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:paddingVertical="0dp"
+                    android:text="@string/button_next" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

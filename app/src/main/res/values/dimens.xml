@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">@dimen/_16sdp</dimen>
+    <dimen name="activity_padding_small">@dimen/_10sdp</dimen>
+    <dimen name="activity_padding2">@dimen/_20sdp</dimen>
+    <dimen name="margin_very_small">@dimen/_4sdp</dimen>
+    <dimen name="margin_small">@dimen/_10sdp</dimen>
+    <dimen name="margin_medium">@dimen/_16sdp</dimen>
+    <dimen name="margin_big">@dimen/_25sdp</dimen>
+    <dimen name="button_radius">@dimen/_3sdp</dimen>
+    <dimen name="bottom_sheet_radius">@dimen/_26sdp</dimen>
+    <dimen name="button_padding_horizontal">@dimen/_12sdp</dimen>
+    <dimen name="button_padding_vertical">@dimen/_10sdp</dimen>
+    <dimen name="edittext_padding_vertical">@dimen/_12sdp</dimen>
+    <dimen name="edittext_padding_horizontal">@dimen/_11sdp</dimen>
+    <dimen name="button_text_size">@dimen/_12ssp</dimen>
+    <dimen name="button_width">@dimen/_60sdp</dimen>
+    <dimen name="button_height">@dimen/_30sdp</dimen>
+    <dimen name="button_min_margin">@dimen/_2sdp</dimen>
+    <dimen name="stroke_width">@dimen/_1sdp</dimen>
+    <dimen name="checkbox_size">@dimen/_15sdp</dimen>
+    <dimen name="text_margin_very_small">@dimen/_2sdp</dimen>
+    <dimen name="text_size_very_small">@dimen/_11ssp</dimen>
+    <dimen name="text_size_small">@dimen/_13ssp</dimen>
+    <dimen name="layout_margin_very_small">@dimen/_4sdp</dimen>
+    <dimen name="text_margin_small">@dimen/_7sdp</dimen>
+    <dimen name="text_drawable_margin_small">@dimen/_7sdp</dimen>
+    <dimen name="text_drawable_margin_medium">@dimen/_10sdp</dimen>
+    <dimen name="otp_box_size">@dimen/_36sdp</dimen>
+    <dimen name="user_image_size">@dimen/_70sdp</dimen>
+    <dimen name="icon_padding_small">@dimen/_5sdp</dimen>
+</resources>
